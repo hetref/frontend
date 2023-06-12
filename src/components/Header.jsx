@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import image from "../assets/headerImage.jpg";
+import image from "../assets/headerimage.jpg";
 import { services1, services2 } from "../constants";
 
 const Header = () => {
