@@ -1,0 +1,120 @@
+* {
+  /* font-family: "PT Sans", sans-serif; */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button.submit_button {
+  border: 2px solid #000000d1;
+  color: #000000d1;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  border-radius: 6px;
+  margin-top: 1rem;
+  transition: all 0.2s ease-in-out;
+  font-size: 1.2rem;
+}
+
+button.submit_button:hover {
+  background: #000000d1;
+  color: #ffffff;
+}
+
+.input_styles {
+  border: 2px solid #00000085;
+  padding: 0.3rem 0.8rem;
+  border-radius: 2px;
+  margin-bottom: 1rem;
+  margin-top: 0.4rem;
+}
+
+.checkbox_styles {
+  margin-top: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+/* Checkbox Styles */
+
+.cyberpunk-button {
+  background-color: #00000085;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.cyberpunk-checkbox {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #00000085;
+  border-radius: 5px;
+  background-color: transparent;
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.cyberpunk-checkbox:before {
+  content: "";
+  background-color: #00000085;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.cyberpunk-checkbox:checked:before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.cyberpunk-checkbox-label {
+  font-size: 15px;
+  margin-bottom: 0.35rem;
+  color: #000000d1;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 415px) {
+  .input_styles {
+    border: 1.4px solid #00000085;
+    margin-bottom: 0.6rem;
+    margin-top: 0.2rem;
+  }
+
+  button.submit_button {
+    /* background: #000000d1; */
+    border: 1.4px solid #000000d1;
+    color: #000000d1;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+    border-radius: 4px;
+    margin-top: 0.6rem;
+    transition: all 0.2s ease-in-out;
+    font-size: 1rem;
+  }
+
+  button.submit_button:hover {
+    background: #000000d1;
+    color: #ffffff;
+  }
+}
